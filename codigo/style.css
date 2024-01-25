@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Cabeçalho Nav*/
+
+nav{
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: rgb(163, 70, 70);
+    border-bottom: 2px solid rgb(167, 15, 15);
+}
+
+/*Caixas de navegação*/
+
+.treinos, 
+.dias, 
+.tipos{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*Caixa treinos*/
+
+.treinos{
+    position: absolute;
+    height: 300px;
+    left: 300px;
+    display: none;
+}
+
+.treinos li{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.treinos li:hover{
+    background-color: rgb(163, 70, 70);
+}
+
+/*Caixa dias*/
+
+.dias{
+    position: absolute;
+    left: 600px;
+    width: 200px;
+    display: none;
+}
+
+.dias ul{
+    list-style: none;
+}
+
+.dias li{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dias li:hover{
+    background-color: rgb(163, 70, 70);
+}
+
+/*Caixa tipos*/
+
+.tipos{
+    position: absolute;
+    left: 700px;
+    display: none;
+}
+
+/*Sessão motivação*/
+
+section{
+    background-color: rgb(20, 19, 19);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1{
+    color: white;
+    font-size: 50px;
+}
