@@ -44,7 +44,7 @@ nav a:hover{
 .treinos{
     position: absolute;
     height: 300px;
-    left: 300px;
+    left: 22vw;
     display: none;
 }
 
@@ -64,7 +64,7 @@ nav a:hover{
 
 .dias{
     position: absolute;
-    left: 600px;
+    left: 47vw;
     width: 200px;
     display: none;
 }
@@ -89,8 +89,36 @@ nav a:hover{
 
 .tipos{
     position: absolute;
-    left: 700px;
+    left: 55vw;
     display: none;
+}
+
+
+/*dias*/
+
+.segunda,
+.terca,
+.quarta,
+.quinta,
+.sexta{
+    display: none;
+    position: absolute;
+}
+
+.segunda{
+    background-color: brown;
+    width: 600px;
+    height: 400px;
+    left: 28vw;
+    top: 15vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.segunda .roteiro{
+    display: flex;
+    flex-direction: column;
 }
 
 /*Sessão motivação*/
