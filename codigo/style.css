@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
+/*Geral*/
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
 }
 
 /*Cabeçalho Nav*/
@@ -89,12 +95,14 @@ nav a:hover{
 
 .tipos{
     position: absolute;
+    height: 300px;
+    width: 350px;
     left: 55vw;
     display: none;
 }
 
 
-/*dias*/
+/*Menu dos Dias*/
 
 .segunda,
 .terca,
@@ -105,26 +113,136 @@ nav a:hover{
     position: absolute;
 }
 
+/*Segunda-Feira*/
+
 .segunda{
     background-color: brown;
-    width: 600px;
-    height: 400px;
-    left: 28vw;
-    top: 15vh;
+    width: 700px;
+    height: 550px;
+    left: 29%;
+    top: 10vh;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
 }
 
+.segunda h2{
+    margin: 10px;
+}
+
 .segunda .roteiro{
-    display: flex;
-    flex-direction: column;
+    text-align: left;
+}
+
+.t-cardio{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 300px 250px;
+}
+
+.t-pernas {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 250px 180px 120px;
+}
+
+.t-abdominal{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 140px 140px 140px 140px;
+}
+
+/*terça-Feira*/
+
+.terca{
+    background-color: brown;
+    width: 700px;
+    height: 550px;
+    left: 29%;
+    top: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.terca h2{
+    margin: 10px;
+}
+
+.terca .roteiro{
+    text-align: left;
+}
+
+/*Quarta-Feira*/
+
+.quarta{
+    background-color: brown;
+    width: 700px;
+    height: 550px;
+    left: 29%;
+    top: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.quarta h2{
+    margin: 10px;
+}
+
+.quarta .roteiro{
+    text-align: left;
+}
+
+/*Quinta-Feira*/
+
+.quinta{
+    background-color: brown;
+    width: 700px;
+    height: 550px;
+    left: 29%;
+    top: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.quinta h2{
+    margin: 10px;
+}
+
+.quinta .roteiro{
+    text-align: left;
+}
+
+/*Sexta-Feira*/
+
+.sexta{
+    background-color: brown;
+    width: 700px;
+    height: 550px;
+    left: 29%;
+    top: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.sexta h2{
+    margin: 10px;
+}
+
+.sexta .roteiro{
+    text-align: left;
 }
 
 /*Sessão motivação*/
 
-section{
-    background-color: rgb(20, 19, 19);
+.sessao-motivação{
+    background-color: rgb(105, 10, 10);
     height: 500px;
     display: flex;
     align-items: center;
@@ -134,4 +252,32 @@ section{
 section h1{
     color: white;
     font-size: 50px;
+}
+
+/*Main Seção do corpo inicial*/
+
+main{
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+}
+
+#inicio{
+    background-color: gray;
+    width: 1200px;
+    padding: 20px;
+}
+
+#inicio h1{
+    text-align: center;
+}
+
+#inicio h2{
+    margin: 10px;
+}
+
+#inicio li{
+    list-style: circle;
+    margin-left: 50px;
+    margin-bottom: 5px;
 }

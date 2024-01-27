@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@media screen and (max-width: 800px) {
+    
+    /*Sessão motivação*/
+
+    section h1{
+        font-size: 24px;
+    }
+
+
+    /*Caixa treinos*/
+
+    .treinos{
+        height: 300px;
+        width: 350px;
+        left: 3%;
+        top: 8%;
+    }
+
+    /*Caixa dias*/
+
+    .dias{
+        left: 30vw;
+        width: 200px;
+    }
+
+    /*Caixa tipos*/
+
+    .tipos{
+        left: 3%;
+        display: none;
+    }
+
+    /*Segunda-Feira*/
+
+    .segunda{
+        width: 360px;
+        height: 550px;
+        left: 2%;
+        top: 10vh;
+    }
+
+    .segunda h2{
+        margin: 15px 0px;
+        font-size: 20px;
+    }
+
+    .segunda h3{
+        font-size: 15px;
+    }
+
+    .segunda p{
+        font-size: 14px;
+    }
+    
+    .segunda .roteiro{
+        text-align: left;
+    }
+
+    .t-cardio{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 150px 180px;
+    }
+    
+    .t-pernas {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 150px 100px 80px;
+    }
+    
+    .t-abdominal{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 85px 85px 85px 85px;
+    }
+
+    /*Main Seção do corpo inicial*/
+
+    main{
+        background-color: rgb(14, 14, 14);
+        display: flex;
+        justify-content: center;
+    }
+
+    #inicio{
+        background-color: gray;
+        width: 1200px;
+        padding: 20px;
+    }
+
+    #inicio h1{
+        text-align: center;
+    }
+
+    #inicio h2{
+        font-size: 20px;
+    }
+
+    #inicio li{
+        font-size: 16px;
+    }
+    
+}
