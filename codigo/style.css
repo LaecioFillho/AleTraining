@@ -115,30 +115,35 @@ nav a:hover{
 
 /*Segunda-Feira*/
 
-.segunda{
+.segunda, .terca, .quarta, .quinta, .sexta{
     background-color: brown;
     width: 700px;
-    height: 550px;
-    left: 29%;
+    height: 520px;
+    left: 25%;
     top: 10vh;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
 }
 
-.segunda h2{
-    margin: 10px;
+.segunda h1{
+    background-color: rgb(105, 10, 10);
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
 }
 
-.segunda .roteiro{
-    text-align: left;
+.segunda h2{
+    margin: 10px;
+    border: 1px solid;
 }
+
 
 .t-cardio{
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 300px 250px;
+    text-align: left;
 }
 
 .t-pernas {
@@ -146,6 +151,7 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     grid-template-columns: 250px 180px 120px;
+    text-align: left;
 }
 
 .t-abdominal{
@@ -153,62 +159,44 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     grid-template-columns: 140px 140px 140px 140px;
+    text-align: left;
 }
 
 /*terça-Feira*/
 
-.terca{
-    background-color: brown;
-    width: 700px;
-    height: 550px;
-    left: 29%;
-    top: 10vh;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
+.terca h1{
+    background-color: rgb(105, 10, 10);
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
 }
 
 .terca h2{
     margin: 10px;
+    border: 1px solid;
 }
 
-.terca .roteiro{
+.t-peito{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 250px 180px 120px;
     text-align: left;
 }
 
 /*Quarta-Feira*/
 
-.quarta{
-    background-color: brown;
-    width: 700px;
-    height: 550px;
-    left: 29%;
-    top: 10vh;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
+.quarta h1{
+    background-color: rgb(105, 10, 10);
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
 }
 
 .quarta h2{
     margin: 10px;
-}
-
-.quarta .roteiro{
-    text-align: left;
+    border: 1px solid;
 }
 
 /*Quinta-Feira*/
-
-.quinta{
-    background-color: brown;
-    width: 700px;
-    height: 550px;
-    left: 29%;
-    top: 10vh;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
 
 .quinta h2{
     margin: 10px;
@@ -219,17 +207,6 @@ nav a:hover{
 }
 
 /*Sexta-Feira*/
-
-.sexta{
-    background-color: brown;
-    width: 700px;
-    height: 550px;
-    left: 29%;
-    top: 10vh;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
 
 .sexta h2{
     margin: 10px;
@@ -243,7 +220,7 @@ nav a:hover{
 
 .sessao-motivação{
     background-color: rgb(105, 10, 10);
-    height: 500px;
+    height: 620px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,11 +242,15 @@ main{
 #inicio{
     background-color: gray;
     width: 1200px;
-    padding: 20px;
+    padding: 30px;
 }
 
 #inicio h1{
     text-align: center;
+    color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 #inicio h2{
@@ -281,3 +262,26 @@ main{
     margin-left: 50px;
     margin-bottom: 5px;
 }
+
+/*Rodapé*/
+
+footer{
+    background-color: rgb(105, 10, 10);
+    height: 80px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+footer h3{
+    font-size: 25px;
+}
+
+footer img{
+    height: 30px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+
+
