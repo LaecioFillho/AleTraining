@@ -39,16 +39,16 @@
         top: 4vh;
     }
 
-    .segunda h2{
+    .segunda, .terca, .quarta, .quinta, .sexta h2{
         margin: 15px 0px;
         font-size: 20px;
     }
 
-    .segunda h3{
+    .segunda, .terca, .quarta, .quinta, .sexta h3{
         font-size: 15px;
     }
 
-    .segunda p{
+    .segunda, .terca, .quarta, .quinta, .sexta p{
         font-size: 14px;
     }
 
@@ -73,18 +73,27 @@
         grid-template-columns: 85px 85px 85px 85px;
     }
 
+    /*Terça-Feira*/
+
+    .t-peito{
+        grid-template-columns: 170px 80px 80px;
+    }
+
+    /*Quarta-Feira*/
+
+    .t-abdominal-qua{     
+        grid-template-columns: 85px 85px 85px 85px;
+        text-align: center;
+    }
+
     /*Main Seção do corpo inicial*/
 
     main{
         background-color: rgb(14, 14, 14);
-        display: flex;
-        justify-content: center;
     }
 
     #inicio{
-        background-color: gray;
-        width: 1200px;
-        padding: 20px;
+        padding: 30px;
     }
 
     #inicio h1{
@@ -97,6 +106,19 @@
 
     #inicio li{
         font-size: 16px;
+    }
+
+    .gifs{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gifs img{
+        width: 150px;
+        height: auto;
+        margin-bottom: 50px;
     }
     
 }

@@ -196,6 +196,14 @@ nav a:hover{
     border: 1px solid;
 }
 
+.t-abdominal-qua{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 140px 140px 140px 140px;
+    text-align: left;
+}
+
 /*Quinta-Feira*/
 
 .quinta h2{
@@ -235,13 +243,12 @@ section h1{
 
 main{
     background-color: rgb(14, 14, 14);
-    display: flex;
-    justify-content: center;
 }
 
 #inicio{
+    margin: auto;
     background-color: gray;
-    width: 1200px;
+    max-width: 1000px;
     padding: 30px;
 }
 
@@ -263,6 +270,22 @@ main{
     margin-bottom: 5px;
 }
 
+/*Sessão de Gifs diarios*/
+
+.gifs{
+    margin: auto;
+    background-color: white;
+    max-width: 1000px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 550px 500px;
+}
+
+.gifs img{
+    width: 300px;
+    height: auto;
+}
+
 /*Rodapé*/
 
 footer{
@@ -278,7 +301,7 @@ footer h3{
 }
 
 footer img{
-    height: 30px;
+    height: 25px;
     margin-left: 0.5%;
     margin-right: 0.5%;
 }
