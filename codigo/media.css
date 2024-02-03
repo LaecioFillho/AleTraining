@@ -90,6 +90,17 @@
         text-align: center;
     }
 
+    /*Caixa dos Tipos de Treinos*/
+
+    .tipos-treinos{
+        left: 4vw;
+        top: 10%;
+    }
+
+    .tipos-treinos img{
+        width: 330px;
+    }
+
     /*Main Seção do corpo inicial*/
 
     main{

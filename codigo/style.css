@@ -223,6 +223,31 @@ nav a:hover{
     border: 1px solid;
 }
 
+/*Tipos de Treinos*/
+
+.tipos-treinos{
+    position: absolute;
+    left: calc(50% - 13%);
+    top: 10%;
+    background-color: brown;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tipos-treinos h2{
+    color: white;
+    margin: 10px;
+}
+
+.tipos-treinos img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.ex1, .ex2, .ex3, .ex4, .ex5, .ex6, .ex7, .ex8, .ex9, .ex10 {
+    display: none;
+}
+
 /*Sessão motivação*/
 
 .sessao-motivação{

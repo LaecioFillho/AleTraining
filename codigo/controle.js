@@ -27,6 +27,20 @@ let diaQuarta = document.querySelector('.quarta')
 let diaQuinta = document.querySelector('.quinta')
 let diaSexta = document.querySelector('.sexta')
 
+//Variaveis da Cx Tipos de Treinos:
+
+let btnEx1 = document.querySelector('.btn-ex1')
+let btnEx2 = document.querySelector('.btn-ex2')
+let btnEx3 = document.querySelector('.btn-ex3')
+let btnEx4 = document.querySelector('.btn-ex4')
+let btnEx5 = document.querySelector('.btn-ex5')
+
+let tipoEx1 = document.querySelector('.ex1')
+let tipoEx2 = document.querySelector('.ex2')
+let tipoEx3 = document.querySelector('.ex3')
+let tipoEx4 = document.querySelector('.ex4')
+let tipoEx5 = document.querySelector('.ex5')
+
 //Ação da caixa Dias:
 
 btnDia.addEventListener('click', function(){
@@ -42,6 +56,12 @@ btnDia.addEventListener('click', function(){
         diaQuarta.style.display = 'none'
         diaQuinta.style.display = 'none'
         diaSexta.style.display = 'none'
+
+        tipoEx1.style.display = 'none'
+        tipoEx2.style.display = 'none'
+        tipoEx3.style.display = 'none'
+        tipoEx4.style.display = 'none'
+        tipoEx5.style.display = 'none'
 
     } else {
         dia.style.display = 'none'
@@ -64,6 +84,13 @@ btnTreino.addEventListener('click', function(){
         diaQuarta.style.display = 'none'
         diaQuinta.style.display = 'none'
         diaSexta.style.display = 'none'
+
+        tipoEx1.style.display = 'none'
+        tipoEx2.style.display = 'none'
+        tipoEx3.style.display = 'none'
+        tipoEx4.style.display = 'none'
+        tipoEx5.style.display = 'none'
+
     } else {
         treino.style.display = 'none'
     }
@@ -84,6 +111,12 @@ btnTipo.addEventListener('click', function(){
         diaQuarta.style.display = 'none'
         diaQuinta.style.display = 'none'
         diaSexta.style.display = 'none'
+
+        tipoEx1.style.display = 'none'
+        tipoEx2.style.display = 'none'
+        tipoEx3.style.display = 'none'
+        tipoEx4.style.display = 'none'
+        tipoEx5.style.display = 'none'
 
     } else {
         tipo.style.display = 'none'
@@ -107,6 +140,12 @@ btnInicio.addEventListener('click', function(){
         diaQuarta.style.display = 'none'
         diaQuinta.style.display = 'none'
         diaSexta.style.display = 'none'
+
+        tipoEx1.style.display = 'none'
+        tipoEx2.style.display = 'none'
+        tipoEx3.style.display = 'none'
+        tipoEx4.style.display = 'none'
+        tipoEx5.style.display = 'none'
     }
 })
 
@@ -160,5 +199,57 @@ btnSexta.addEventListener('click', function(){
         dia.style.display = 'none'      
     } else {
         diaSexta.style.display = 'none'
+    }
+})
+
+//Ação da caixa de Tipos de Treinos:
+
+btnEx1.addEventListener('click', function(){
+
+    if (tipoEx1.style.display === 'none') {
+        tipoEx1.style.display = 'block'
+        tipo.style.display = 'none'       
+    } else {
+        tipoEx1.style.display = 'none'
+    }
+})
+
+btnEx2.addEventListener('click', function(){
+
+    if (tipoEx2.style.display === 'none') {
+        tipoEx2.style.display = 'block'
+        tipo.style.display = 'none'       
+    } else {
+        tipoEx2.style.display = 'none'
+    }
+})
+
+btnEx3.addEventListener('click', function(){
+
+    if (tipoEx3.style.display === 'none') {
+        tipoEx3.style.display = 'block'
+        tipo.style.display = 'none'       
+    } else {
+        tipoEx3.style.display = 'none'
+    }
+})
+
+btnEx4.addEventListener('click', function(){
+
+    if (tipoEx4.style.display === 'none') {
+        tipoEx4.style.display = 'block'
+        tipo.style.display = 'none'       
+    } else {
+        tipoEx4.style.display = 'none'
+    }
+})
+
+btnEx5.addEventListener('click', function(){
+
+    if (tipoEx5.style.display === 'none') {
+        tipoEx5.style.display = 'block'
+        tipo.style.display = 'none'       
+    } else {
+        tipoEx5.style.display = 'none'
     }
 })
