@@ -3,7 +3,7 @@
     
     /*Sessão motivação*/
 
-    section h1{
+    .sessao-motivação h1{
         font-size: 24px;
     }
 
@@ -39,16 +39,20 @@
         top: 4vh;
     }
 
-    .segunda, .terca, .quarta, .quinta, .sexta h2{
+    .segunda, .terca, .quarta, .quinta, .sexta, h1{
+        font-size: 26px;
+    }
+
+    .segunda, .terca, .quarta, .quinta, .sexta, h2{
         margin: 15px 0px;
         font-size: 20px;
     }
 
-    .segunda, .terca, .quarta, .quinta, .sexta h3{
+    .segunda, .terca, .quarta, .quinta, .sexta, h3{
         font-size: 15px;
     }
 
-    .segunda, .terca, .quarta, .quinta, .sexta p{
+    .segunda, .terca, .quarta, .quinta, .sexta, p{
         font-size: 14px;
     }
 
@@ -97,6 +101,7 @@
     }
 
     #inicio h1{
+        font-size: 24px;
         text-align: center;
     }
 
@@ -113,6 +118,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     
     .gifs img{
@@ -137,7 +143,7 @@
         /*Caixa treinos*/
 
         .treinos{
-            left: 28%;
+            left: 26%;
         }
     
         /*Caixa dias*/
@@ -155,7 +161,7 @@
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 520px) {
 
     .segunda, .terca, .quarta, .quinta, .sexta{
         width: 360px;
@@ -166,7 +172,35 @@
         /*Caixa treinos*/
 
         .treinos{
-            left: 9%;
+            left: 17%;
+        }
+    
+        /*Caixa dias*/
+    
+        .dias{
+            left: 32vw;
+        }
+    
+        /*Caixa tipos*/
+    
+        .tipos{
+            left: 29%;
+        }
+    
+}
+
+@media (max-width: 500px) {
+
+    .segunda, .terca, .quarta, .quinta, .sexta{
+        width: 360px;
+        left: 9%;
+        top: 6vh;
+    }
+
+        /*Caixa treinos*/
+
+        .treinos{
+            left: 15%;
         }
     
         /*Caixa dias*/
@@ -178,7 +212,64 @@
         /*Caixa tipos*/
     
         .tipos{
-            left: 9%;
+            left: 28%;
+        }
+    
+}
+
+@media (max-width: 460px) {
+
+    .segunda, .terca, .quarta, .quinta, .sexta{
+        width: 360px;
+        left: 9%;
+        top: 6vh;
+    }
+
+        /*Caixa treinos*/
+
+        .treinos{
+            left: 12%;
+        }
+    
+        /*Caixa dias*/
+    
+        .dias{
+            left: 30vw;
+        }
+    
+        /*Caixa tipos*/
+    
+        .tipos{
+            left: 27%;
+        }
+    
+
+}
+
+@media (max-width: 420px) {
+
+    .segunda, .terca, .quarta, .quinta, .sexta{
+        width: 360px;
+        left: 9%;
+        top: 6vh;
+    }
+
+        /*Caixa treinos*/
+
+        .treinos{
+            left: 8%;
+        }
+    
+        /*Caixa dias*/
+    
+        .dias{
+            left: 30vw;
+        }
+    
+        /*Caixa tipos*/
+    
+        .tipos{
+            left: 22%;
         }
     
 
@@ -195,7 +286,7 @@
         /*Caixa treinos*/
 
         .treinos{
-            left: 5%;
+            left: 3%;
         }
     
         /*Caixa dias*/
@@ -207,7 +298,7 @@
         /*Caixa tipos*/
     
         .tipos{
-            left: 5%;
+            left: 21%;
         }
     
 
@@ -224,7 +315,7 @@
         /*Caixa treinos*/
 
         .treinos{
-            left: 3%;
+            left: 6%;
         }
     
         /*Caixa dias*/
@@ -236,9 +327,8 @@
         /*Caixa tipos*/
     
         .tipos{
-            left: 3%;
+            left: 20%;
         }
-    
 
 }
 

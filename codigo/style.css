@@ -12,6 +12,11 @@ ul{
     list-style: none;
 }
 
+h1{
+    color: white;
+    font-size: 50px;
+}
+
 /*Cabeçalho Nav*/
 
 nav{
@@ -38,27 +43,26 @@ nav a:hover{
 .treinos, 
 .dias, 
 .tipos{
-    width: 400px;
+    width: 300px;
     height: 200px;
     background-color: gray;
     border-radius: 10px;
-    padding: 20px;
 }
 
 /*Caixa treinos*/
 
 .treinos{
     position: absolute;
-    height: 300px;
-    left: 22vw;
+    height: 350px;
+    left: 30vw;
     display: none;
 }
 
-.treinos li{
+.treinos, .dias, .tipos, li{
     font-size: 20px;
     cursor: pointer;
     transition: 0.2s;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
 }
 
@@ -71,20 +75,8 @@ nav a:hover{
 .dias{
     position: absolute;
     left: 47vw;
-    width: 200px;
+    width: 160px;
     display: none;
-}
-
-.dias ul{
-    list-style: none;
-}
-
-.dias li{
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.2s;
-    border-radius: 5px;
-    padding: 5px;
 }
 
 .dias li:hover{
@@ -96,19 +88,20 @@ nav a:hover{
 .tipos{
     position: absolute;
     height: 300px;
-    width: 350px;
+    width: 220px;
     left: 55vw;
     display: none;
+    overflow-y: scroll;
+}
+
+.tipos li:hover{
+    background-color: rgb(163, 70, 70);
 }
 
 
-/*Menu dos Dias*/
+/*Caixas do Menu dos Dias*/
 
-.segunda,
-.terca,
-.quarta,
-.quinta,
-.sexta{
+.segunda, .terca, .quarta, .quinta, .sexta{
     display: none;
     position: absolute;
 }
@@ -118,8 +111,8 @@ nav a:hover{
 .segunda, .terca, .quarta, .quinta, .sexta{
     background-color: brown;
     width: 700px;
-    height: 520px;
-    left: 25%;
+    height: 550px;
+    left: 27%;
     top: 10vh;
     border-radius: 10px;
     padding: 10px;
@@ -206,22 +199,28 @@ nav a:hover{
 
 /*Quinta-Feira*/
 
-.quinta h2{
-    margin: 10px;
+.quinta h1{
+    background-color: rgb(105, 10, 10);
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
 }
 
-.quinta .roteiro{
-    text-align: left;
+.quinta h2{
+    margin: 10px;
+    border: 1px solid;
 }
 
 /*Sexta-Feira*/
 
-.sexta h2{
-    margin: 10px;
+.sexta h1{
+    background-color: rgb(105, 10, 10);
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
 }
 
-.sexta .roteiro{
-    text-align: left;
+.sexta h2{
+    margin: 10px;
+    border: 1px solid;
 }
 
 /*Sessão motivação*/
@@ -234,9 +233,10 @@ nav a:hover{
     justify-content: center;
 }
 
-section h1{
+.sessao-motivação h1{
     color: white;
-    font-size: 50px;
+    font-size: 70px;
+    text-shadow: 6px 4px 10px black;
 }
 
 /*Main Seção do corpo inicial*/
@@ -254,6 +254,7 @@ main{
 
 #inicio h1{
     text-align: center;
+    font-size: 50px;
     color: black;
     border: 1px solid;
     border-radius: 10px;
@@ -278,7 +279,8 @@ main{
     max-width: 1000px;
     padding: 50px;
     display: grid;
-    grid-template-columns: 550px 500px;
+    justify-content: center;
+    grid-template-columns: 400px 300px;
 }
 
 .gifs img{
@@ -286,18 +288,26 @@ main{
     height: auto;
 }
 
+.gifs h2{
+    margin: 10px;
+}
+
 /*Rodapé*/
 
 footer{
     background-color: rgb(105, 10, 10);
-    height: 80px;
     padding: 15px;
     color: white;
     text-align: center;
 }
 
 footer h3{
-    font-size: 25px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer p{
+    margin: 5px;
 }
 
 footer img{
