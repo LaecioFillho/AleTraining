@@ -3,6 +3,10 @@
     
     /*Sessão motivação*/
 
+    .sessao-motivação{
+        flex-direction: column;
+    }
+
     .sessao-motivação h1{
         font-size: 24px;
     }
