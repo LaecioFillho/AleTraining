@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+/*Geral*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+}
+
+/*Área Login*/
+
+main{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+section{
+    width: 500px;
+    height: 450px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/*Forms Área Login*/
+
+div{
+    margin: 30px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#iuser, #ipass{
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#ipass{
+    margin-left: 18px ;
+}
+
+.botao{
+    width: 110px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
