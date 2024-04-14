@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/LoginStyle.css">
+    <link rel="stylesheet" href="../Styles/LoginStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Exercicios para Acadêmia</title>
 </head>
-
 <body>
-
     <header>
-    
         <nav>
-
         </nav>
-
     </header>
-
     <main>
-
-        <section>
+        <section class="container">
             <h2>Faça o seu login</h2>
-            <form action="" method="post" autocomplete="on">
+            <form action="Controllers/validation.js" method="post" autocomplete="on">
                     <div>
                         <label for="iuser">Usuario:</label>
                         <input type="email" name="email" id="iuser" required autocomplete="email" placeholder="Digite seu email"><br>
@@ -35,13 +30,9 @@
                     </div>
             </form>
         </section>
-
     </main>
-
     <footer>
-
     </footer>
-
 </body>
 
 </html>

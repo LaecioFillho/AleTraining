@@ -1,70 +1,100 @@
 @charset "UTF-8";
 
-
 /*Geral*/
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
 }
 
 body{
-    background-color: aqua;
+    background-color: white;
+    background-image: url(../midia/imagens/img-fundo/imagem.png);
+    background-size: contain;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
 }
 
 /*Área Login*/
 
 main{
- height: 100vh;
- display: flex;
- align-items: center;
- justify-content: center;
+    width: 100%;       
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section{
+.container{
     width: 500px;
     height: 450px;
-    background-color: brown;
+    background-color: rgba(0, 0, 0, 0.55);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 2px solid black;
     border-radius: 20px;
 }
 
 /*Forms Área Login*/
 
-div{
-    margin: 30px;
+h2{
+    color: #fff;
+    font-size: 46px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.76);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 label{
+    color: #fff;
     font-size: 18px;
-    font-weight: 700;
 }
 
-#iuser, #ipass{
-    margin: 5px;
+input{
+    width: 100%;
     padding: 10px;
-    border: none;
+    margin: 8px;
     border-radius: 10px;
-}
-
-#ipass{
-    margin-left: 18px ;
-}
-
-.botao{
-    width: 110px;
-    padding: 10px;
     border: none;
-    border-radius: 10px;
-    margin: 5px;
+    font-size: 18px;
 }
 
 .botoes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: #970e97d7;
+    color: white;
+    cursor: pointer; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);   
+}
+
+.botao:hover{
+    background-color: #ffffffad;
+    border: 2px solid #970e97d7;
+    color: black;
+    transition: 0.3s;
+}
+
+@media (max-width: 720px){
+    .container{
+        width: 350px;
+        height: 500px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    input{
+        margin: 12px 0px;
+    }
 }

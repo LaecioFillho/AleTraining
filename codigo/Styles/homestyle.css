@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+}
+
+/*SideBar. Barra de navegação Lateral*/
+
+.sidebar{
+    background-color: #970e97d7;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icons{
+    max-width: 60px;
+    height: auto;
+    cursor: pointer;
+}
