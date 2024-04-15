@@ -79,7 +79,6 @@ input{
 
 .botao:hover{
     background-color: #ffffffad;
-    border: 2px solid #970e97d7;
     color: black;
     transition: 0.3s;
 }

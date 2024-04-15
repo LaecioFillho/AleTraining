@@ -26,8 +26,83 @@ body{
     gap: 30px;
 }
 
+.icons-warraper{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
 .icons{
     max-width: 60px;
     height: auto;
     cursor: pointer;
+}
+
+.selected{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-width: 2px solid black;
+}
+
+/*Conteiner. Corpo principal*/
+
+.container{
+    width: 92.6vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #161616;
+}
+
+.profile-warraper{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+/*Pages. Sub-Paginas */
+
+.pages{
+    display: none;
+    background-color: #ffffffbe;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 720px) {
+
+    .container{
+        width: 60vw;
+    }
+
+    .profile-warraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .pages{
+        width: 250px;
+        height: 300px;
+        left: 50%;
+        top: 45%;
+    }
 }
