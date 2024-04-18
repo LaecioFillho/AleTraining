@@ -23,7 +23,7 @@ body{
 
 main{
     margin: 30px;
-    width: 100%;       
+    width: auto;       
     height: auto;
     display: flex;
     align-items: center;
