@@ -13,6 +13,10 @@ body{
     display: flex;
 }
 
+main{
+    width: 100%;
+}
+
 /*SideBar. Barra de navegação Lateral*/
 
 .sidebar{
@@ -23,7 +27,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .icons-warraper{ 
@@ -31,6 +35,23 @@ body{
     align-items: center;
     justify-content: center;
     width: 100px;
+    padding: 5px;
+}
+
+.icons-warraper:hover{
+    background-color: #0000004d;
+    border-left: 5px solid black; 
+}
+
+.icon-menu{
+    width: 35px;
+    align-self: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+icon-menu:hover{
+    width: 40px;
 }
 
 .icons{
@@ -39,17 +60,23 @@ body{
     cursor: pointer;
 }
 
-.selected{
-    background-color: rgba(0, 0, 0, 0.3);
-    border-width: 2px solid black;
+.text{
+    display: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 /*Conteiner. Corpo principal*/
 
 .container{
-    width: 92.6vw;
     height: 100vh;
-    padding: 20px;
+    padding: 30px;
     background-color: #161616;
 }
 
@@ -70,7 +97,7 @@ body{
 
 /*Pages. Sub-Paginas */
 
-.pages{
+.sub-pages{
     display: none;
     background-color: #ffffffbe;
     width: 300px;
@@ -85,10 +112,6 @@ body{
 
 @media (max-width: 720px) {
 
-    .container{
-        width: 60vw;
-    }
-
     .profile-warraper{
         display: flex;
         flex-direction: column;
@@ -99,10 +122,11 @@ body{
         font-size: 20px;
     }
 
-    .pages{
+    .sub-pages{
         width: 250px;
         height: 300px;
-        left: 50%;
-        top: 45%;
+        left: 61%;
+        top: 50%;
     }
+    
 }
