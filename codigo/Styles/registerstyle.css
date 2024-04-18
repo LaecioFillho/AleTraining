@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*Geral*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+}
+
+body{
+    background-color: white;
+    background-image: url(../midia/imagens/img-fundo/imagem.png);
+    background-size: contain;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/*Área Login*/
+
+main{
+    margin: 30px;
+    width: 100%;       
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/*Forms Área Login*/
+
+.forms-warraper{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: #fff;
+    font-size: 46px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.76);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    color: #fff;
+    font-size: 18px;
+}
+
+input{
+    width: 25rem;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.botoes{
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: #970e97d7;
+    color: white;
+    cursor: pointer; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);   
+}
+
+.botao:hover{
+    background-color: #ffffffad;
+    color: black;
+    transition: 0.3s;
+}
+
+.sex{
+    width: 15px;
+}
+
+.isex{
+    margin: 10px 0;
+}
+
+@media (max-width: 720px){
+    .container{
+        width: 350px;
+        height: auto;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    input{
+        width: 19rem;
+        margin: 12px 0px;
+    }
+
+    .sex{
+        width: 25px;
+    }
+}

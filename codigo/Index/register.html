@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/registerstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h2>Cadastre-se</h2>
+            <form action="https://formsubmit.co/devsoftsuporte@gmail.com" method="post" autocomplete="on">
+                    <div class="forms-warraper">
+                        <label for="iName">Nome:</label>
+                        <input type="text" name="name" id="iName" required autocomplete="name" placeholder="Digite seu nome">
+                        
+                        <div class="isex">
+                            <label for="iSex">Sexo:</label>
+                            <label for="iMa" class="sex">M</label><input type="radio" name="Sex" id="iMa" class="sex">
+                            <label for="iFe" class="sex">F</label><input type="radio" name="Sex" id="iFe" class="sex">
+                        </div>
+                        <label for="iDate">Data de nascimento:</label>
+                        <input type="date" name="date" id="iDate" required>
+                        <label for="iKilograms">Peso:</label>
+                        <input type="number" name="kilograms" id="iKilograms" required min="3" maxlength="5" placeholder="Digite seu peso atual">
+                        <label for="iuser">E-mail:</label>
+                        <input type="email" name="email" id="iuser" required autocomplete="email" placeholder="Digite seu email"><br>
+                        <label for="ipass">Senha:</label>
+                        <input type="password" name="password" id="ipass" required min="6" max="6" placeholder="Crie sua senha">
+                    </div>
+                    <div class="botoes">
+                        <input type="submit" value="Solicitar cadastro" id="btn-enviar" class="botao">
+                        <input type="hidden" name="_next" value="confirmation.html">
+                        <input type="hidden" name="_subject" value="Novo envio!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="Olá, é um prazer ter você conosco. Em breve voce irá receber a confirmação do seu cadastro!">
+                    </div>
+            </form>
+            <a href="confirmation.html">Voltar ao Login</a>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
