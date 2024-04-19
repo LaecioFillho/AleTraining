@@ -28,6 +28,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    transition: 0.3s;
 }
 
 .icons-warraper{ 
@@ -41,6 +42,7 @@ main{
 .icons-warraper:hover{
     background-color: #0000004d;
     border-left: 5px solid black; 
+    transition: 0.3s;
 }
 
 .icon-menu{
@@ -48,10 +50,6 @@ main{
     align-self: center;
     margin-bottom: 40px;
     cursor: pointer;
-}
-
-icon-menu:hover{
-    width: 40px;
 }
 
 .icons{
@@ -67,9 +65,13 @@ icon-menu:hover{
 }
 
 span{
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
     font-size: 20px;
+}
+
+.One{
+    margin: -12px;
 }
 
 /*Conteiner. Corpo principal*/
@@ -110,6 +112,34 @@ span{
     transform: translate(-50%, -50%);
 }
 
+.closed{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 89%;
+    top: 0.5%;
+    border-radius: 30%;
+}
+
+.closed:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+
+.btn{
+    margin: 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #161616;
+    color: white;
+    transition: 0.2s;
+}
+
 @media (max-width: 720px) {
 
     .profile-warraper{
@@ -124,9 +154,13 @@ span{
 
     .sub-pages{
         width: 250px;
-        height: 300px;
+        height: auto;
         left: 61%;
-        top: 50%;
+        top: 60%;
+    }
+
+    .btn{
+        font-size: px;
     }
     
 }

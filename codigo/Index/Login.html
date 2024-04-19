@@ -17,9 +17,9 @@
     <main>
         <section class="container">
             <h2>Faça o seu login</h2>
-            <form action="Controllers/validation.js" method="post" autocomplete="on">
+            <form action="home.html" method="get" autocomplete="on">
                     <div>
-                        <label for="iuser">Usuario:</label>
+                        <label for="iuser">E-mail:</label>
                         <input type="email" name="email" id="iuser" required autocomplete="email" placeholder="Digite seu email"><br>
                         <label for="ipass">Senha:</label>
                         <input type="password" name="pass" id="ipass" required min="6" max="6" placeholder="Digite sua senha">
@@ -36,5 +36,5 @@
     <footer>
     </footer>
 </body>
-
+<script src="../Controllers/validation.js"></script>
 </html>
