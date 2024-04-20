@@ -31,18 +31,18 @@ main{
     transition: 0.3s;
 }
 
-.icons-warraper{ 
+.icons-warraper{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
     padding: 5px;
+    transition: 0.3s;
 }
 
 .icons-warraper:hover{
     background-color: #0000004d;
-    border-left: 5px solid black; 
-    transition: 0.3s;
+    border-left: 5px solid black;
 }
 
 .icon-menu{
@@ -107,7 +107,7 @@ span{
     padding: 20px;
 
     position: absolute;
-    left: 20%;
+    left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -118,12 +118,12 @@ span{
     position: absolute;
     left: 89%;
     top: 0.5%;
-    border-radius: 30%;
+    transition: 0.2s;
 }
 
 .closed:hover{
-    background-color: white;
-    transition: 0.2s;
+    width: 50px;
+    left: 84%;
 }
 
 .btn{
@@ -132,12 +132,63 @@ span{
     border-radius: 4px;
     padding: 10px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .btn:hover{
     background-color: #161616;
     color: white;
-    transition: 0.2s;
+}
+
+.gifs-warraper{
+    display: none;
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #ffffffbe;
+    padding-top: 10px;
+    width: 350px;
+    height: 350px;
+}
+
+.gif-one{
+    display: flex;
+}
+
+.gif{
+    margin-left: 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.legend-gif{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.alt-legends{
+    padding: 5px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #970e97d7;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alt-legends:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
 }
 
 @media (max-width: 720px) {
@@ -162,5 +213,5 @@ span{
     .btn{
         font-size: px;
     }
-    
+
 }

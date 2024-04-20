@@ -58,14 +58,33 @@ btns.addEventListener('click', () => {
     }
 })
 
+const gifOne = document.querySelector('.gifs-warraper')
+const btnEx1 = document.querySelector('.ex1')
+
+btnEx1.addEventListener('click', () => {
+    if(gifOne.style.display === 'none'){
+        gifOne.style.display = 'block'
+        page1.style.display = 'none'
+    }else{
+        gifOne.style.display = 'none'
+    }
+})
 
 const closed = document.querySelector('.closed')
 
-closed.addEventListener('click', () => page1.style.display = 'none')
+closed.addEventListener('click', () => {
+    page1.style.display = 'none'
+})
+
+const closedTwo = document.querySelector('.C-two')
+
+closedTwo.addEventListener('click', () => {
+    gifOne.style.display = 'none'
+})
 
 /* const selected = document.querySelectorAll('.icons-warraper')
 
-selected.addEventListener('click', function() { 
+selected.addEventListener('click', function() {
     if(selected.classList.contains('icons-warraper selected') == true){
         Selected.removeAttribute('class')
     }else{
