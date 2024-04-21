@@ -47,40 +47,6 @@ onSidebar.addEventListener('click', () => {
     }
 })
 
-const btns = document.querySelector('.one')
-const page1 = document.querySelector('.subOne')
-
-btns.addEventListener('click', () => {
-    if(page1.style.display === 'none'){
-        page1.style.display = 'block'
-    }else{
-        page1.style.display = 'none'
-    }
-})
-
-const gifOne = document.querySelector('.gifs-warraper')
-const btnEx1 = document.querySelector('.ex1')
-
-btnEx1.addEventListener('click', () => {
-    if(gifOne.style.display === 'none'){
-        gifOne.style.display = 'block'
-        page1.style.display = 'none'
-    }else{
-        gifOne.style.display = 'none'
-    }
-})
-
-const closed = document.querySelector('.closed')
-
-closed.addEventListener('click', () => {
-    page1.style.display = 'none'
-})
-
-const closedTwo = document.querySelector('.C-two')
-
-closedTwo.addEventListener('click', () => {
-    gifOne.style.display = 'none'
-})
 
 /* const selected = document.querySelectorAll('.icons-warraper')
 
