@@ -1,4 +1,4 @@
-import {dados} from '../Controllers/dataid.js'
+import {dados} from '../Controllers/contsidebar.js'
 
 const forms = document.querySelector('.forms')
 const nameUser = document.querySelector('.saud')
@@ -13,8 +13,7 @@ forms.addEventListener('submit', (event) => {
     const password = event.target.querySelector('input[name=pass]').value
 
     if(user === "laeciofillho@gmail.com" && password === "1234567"){
-        nameUser.innerHTML = "Olá Junior, Vamos treinar?"
-        dados()
+        const data = new dados()
     }else{
         event.preventDefault()
         alert("Dados incorretos! Ou dados não autorizados!")

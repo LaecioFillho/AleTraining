@@ -209,6 +209,10 @@ span{
         font-size: 20px;
     }
 
+    .gifs-warraper{
+        height: auto;
+    }
+
     .sub-pages{
         width: 250px;
         height: auto;

@@ -48,6 +48,12 @@ onSidebar.addEventListener('click', () => {
 })
 
 
+const nameUser = document.querySelector('.saud')
+
+module.export = function dados(){
+  nameUser.innerHTML = "Olá Junior, Vamos treinar?"
+}
+
 /* const selected = document.querySelectorAll('.icons-warraper')
 
 selected.addEventListener('click', function() {
