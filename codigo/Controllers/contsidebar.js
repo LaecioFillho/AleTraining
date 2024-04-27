@@ -1,17 +1,12 @@
 const onSidebar = document.querySelector('.icon-menu')
 const setSidebar = document.querySelector('.sidebar')
 
-const setIconsOne = document.querySelector('.one')
-const setIconsTwo = document.querySelector('.two')
-const setIconsTree = document.querySelector('.three')
-const setIconsFour = document.querySelector('.four')
-const setIconsFive = document.querySelector('.five')
+const icons = [...document.querySelectorAll('.icons-warraper')]
+const [i1,i2,i3,i4,i5] = icons
 
-const setTextOne = document.querySelector('.One')
-const setTextTwo = document.querySelector('.Two')
-const setTextThree = document.querySelector('.Three')
-const setTextFour = document.querySelector('.Four')
-const setTextFive = document.querySelector('.Five')
+const textsDays = [...document.querySelectorAll('.text')]
+const [t1,t2,t3,t4,t5] = textsDays
+
 
 onSidebar.addEventListener('click', () => {
     if(setSidebar.style.width === '100px'){
@@ -19,31 +14,31 @@ onSidebar.addEventListener('click', () => {
             width: 300px;
             align-items: start;
         `
-        setIconsOne.style.width = '300px'
-        setIconsTwo.style.width = '300px'
-        setIconsTree.style.width = '300px'
-        setIconsFour.style.width = '300px'
-        setIconsFive.style.width = '300px'
+        i1.style.width = '300px'
+        i2.style.width = '300px'
+        i3.style.width = '300px'
+        i4.style.width = '300px'
+        i5.style.width = '300px'
 
-        setTextOne.style.display = 'block'
-        setTextTwo.style.display = 'block'
-        setTextThree.style.display = 'block'
-        setTextFour.style.display = 'block'
-        setTextFive.style.display = 'block'
+        t1.style.display = 'block'
+        t2.style.display = 'block'
+        t3.style.display = 'block'
+        t4.style.display = 'block'
+        t5.style.display = 'block'
     } else{
         setSidebar.style.width = '100px'
 
-        setIconsOne.style.width = '100px'
-        setIconsTwo.style.width = '100px'
-        setIconsTree.style.width = '100px'
-        setIconsFour.style.width = '100px'
-        setIconsFive.style.width = '100px'
+        i1.style.width = '100px'
+        i2.style.width = '100px'
+        i3.style.width = '100px'
+        i4.style.width = '100px'
+        i5.style.width = '100px'
 
-        setTextOne.style.display = 'none'
-        setTextTwo.style.display = 'none'
-        setTextThree.style.display = 'none'
-        setTextFour.style.display = 'none'
-        setTextFive.style.display = 'none'
+        t1.style.display = 'none'
+        t2.style.display = 'none'
+        t3.style.display = 'none'
+        t4.style.display = 'none'
+        t5.style.display = 'none'
     }
 })
 

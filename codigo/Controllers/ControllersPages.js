@@ -1,15 +1,9 @@
-const btn1 = document.querySelector('.one')
-const btn2 = document.querySelector('.two')
-const btn3 = document.querySelector('.three')
-const btn4 = document.querySelector('.four')
-const btn5 = document.querySelector('.five')
+const buttons = [...document.querySelectorAll('.icons-warraper')]
+const [btn1,btn2,btn3,btn4,btn5] = buttons
 
+const pages = [...document.querySelectorAll('.sub-pages')]
+const [page1,page2,page3,page4,page5] = pages
 
-const page1 = document.querySelector('.subOne')
-const page2 = document.querySelector('.subTwo')
-const page3 = document.querySelector('.subThree')
-const page4 = document.querySelector('.subFour')
-const page5 = document.querySelector('.subFive')
 
 btn1.addEventListener('click', () => {
     if(page1.style.display === 'none'){
@@ -100,33 +94,15 @@ closed5.addEventListener('click', () => {
 //Visibilidade dos Gifs
 
 //Segunda-Feira
-const gifOne = document.querySelector('.gifs-warraper')
-const gifTwo = document.querySelector('.gif2')
-const gifThree = document.querySelector('.gif3')
-const gifFour = document.querySelector('.gif4')
-const gifFive = document.querySelector('.gif5')
-const gifSix = document.querySelector('.gif6')
-const gifSeven = document.querySelector('.gif7')
 
 //Terça-Feira
-const gifEigth = document.querySelector('.gif8')
-const gifNine = document.querySelector('.gif9')
-const gifTen = document.querySelector('.gif10')
-const gifEleven = document.querySelector('.gif11')
-const gifTwelve = document.querySelector('.gif12')
-const gifThirteen = document.querySelector('.gif13')
-const gifFourteen = document.querySelector('.gif14')
-const gifFifteen = document.querySelector('.gif15')
 
 //Quarta-Feira
-const gifSixteen = document.querySelector('.gif16')
-const gifSeventeen = document.querySelector('.gif17')
-const gifEighteen = document.querySelector('.gif18')
-const gifNineteen = document.querySelector('.gif19')
-const gifTwenty = document.querySelector('.gif20')
-const gifTwentyOne = document.querySelector('.gif21')
-const gifTwentyTwo = document.querySelector('.gif22')
-const gifTwentyThree = document.querySelector('.gif23')
+
+const gifs = [...document.querySelectorAll('.gifs-warraper')]
+const [gifSeg1,gifSeg2,gifSeg3,gifSeg4,gifSeg5,gifSeg6,gifSeg7,gifTer8,
+    gifTer9,gifTer10,gifTer11,gifTer12,gifTer13,gifTer14,gifQua15,gifQua16,
+    gifQua17,gifQua18,gifQua19,gifQua20,gifQua21,gifQui22,gifQui23,gifQui24,gifQui25,gifQui26,gifQui27,gifQui28,gifQui29] = gifs
 
 //Segunda-Feira
 const btnEx1 = document.querySelector('.exSegunda1')
@@ -157,184 +133,251 @@ const btnEx21 = document.querySelector('.exQuarta7')
 const btnEx22 = document.querySelector('.exQuarta8')
 
 
+//Quinta-Feira
+const butonsExerQuinta = [...document.querySelectorAll('.Quinta')]
+const [btnQ1,btnQ2,btnQ3,btnQ4,btnQ5,btnQ6,btnQ7,btnQ8] = butonsExerQuinta
+
 //Segunda-Feira
 btnEx1.addEventListener('click', () => {
-    if(gifOne.style.display === 'none'){
-        gifOne.style.display = 'block'
+    if(gifSeg1.style.display === 'none'){
+        gifSeg1.style.display = 'block'
     }else{
-        gifOne.style.display = 'none'
+        gifSeg1.style.display = 'none'
     }
 })
 
 btnEx2.addEventListener('click', () => {
-    if(gifTwo.style.display === 'none'){
-        gifTwo.style.display = 'block'
+    if(gifSeg2.style.display === 'none'){
+        gifSeg2.style.display = 'block'
     }else{
-        gifTwo.style.display = 'none'
+        gifSeg2.style.display = 'none'
     }
 })
 
 btnEx3.addEventListener('click', () => {
-    if(gifThree.style.display === 'none'){
-        gifThree.style.display = 'block'
+    if(gifSeg3.style.display === 'none'){
+        gifSeg3.style.display = 'block'
     }else{
-        gifThree.style.display = 'none'
+        gifSeg3.style.display = 'none'
     }
 })
 
 btnEx4.addEventListener('click', () => {
-    if(gifFour.style.display === 'none'){
-        gifFour.style.display = 'block'
+    if(gifSeg4.style.display === 'none'){
+        gifSeg4.style.display = 'block'
     }else{
-        gifFour.style.display = 'none'
+        gifSeg4.style.display = 'none'
     }
 })
 
 btnEx5.addEventListener('click', () => {
-    if(gifFive.style.display === 'none'){
-        gifFive.style.display = 'block'
+    if(gifSeg5.style.display === 'none'){
+        gifSeg5.style.display = 'block'
     }else{
-        gifFive.style.display = 'none'
+        gifSeg5.style.display = 'none'
     }
 })
 
 btnEx6.addEventListener('click', () => {
-    if(gifSix.style.display === 'none'){
-        gifSix.style.display = 'block'
+    if(gifSeg6.style.display === 'none'){
+        gifSeg6.style.display = 'block'
     }else{
-        gifSix.style.display = 'none'
+        gifSeg6.style.display = 'none'
     }
 })
 
 btnEx7.addEventListener('click', () => {
-    if(gifSeven.style.display === 'none'){
-        gifSeven.style.display = 'block'
+    if(gifSeg7.style.display === 'none'){
+        gifSeg7.style.display = 'block'
     }else{
-        gifSeven.style.display = 'none'
+        gifSeg7.style.display = 'none'
     }
 })
 
-
 //Terça-Feira
 btnEx8.addEventListener('click', () => {
-    if(gifEigth.style.display === 'none'){
-        gifEigth.style.display = 'block'
+    if(gifTer8.style.display === 'none'){
+        gifTer8.style.display = 'block'
     }else{
-        gifEigth.style.display = 'none'
+        gifTer8.style.display = 'none'
     }
 })
 
 btnEx9.addEventListener('click', () => {
-    if(gifNine.style.display === 'none'){
-        gifNine.style.display = 'block'
+    if(gifTer9.style.display === 'none'){
+        gifTer9.style.display = 'block'
     }else{
-        gifNine.style.display = 'none'
+        gifTer9.style.display = 'none'
     }
 })
 
 btnEx10.addEventListener('click', () => {
-    if(gifTen.style.display === 'none'){
-        gifTen.style.display = 'block'
+    if(gifTer10.style.display === 'none'){
+        gifTer10.style.display = 'block'
     }else{
-        gifTen.style.display = 'none'
+        gifTer10.style.display = 'none'
     }
 })
 
 btnEx11.addEventListener('click', () => {
-    if(gifEleven.style.display === 'none'){
-        gifEleven.style.display = 'block'
+    if(gifTer11.style.display === 'none'){
+        gifTer11.style.display = 'block'
     }else{
-        gifEleven.style.display = 'none'
+        gifTer11.style.display = 'none'
     }
 })
 
 btnEx12.addEventListener('click', () => {
-    if(gifTwelve.style.display === 'none'){
-        gifTwelve.style.display = 'block'
+    if(gifTer12.style.display === 'none'){
+        gifTer12.style.display = 'block'
     }else{
-        gifTwelve.style.display = 'none'
+        gifTer12.style.display = 'none'
     }
 })
 
 btnEx13.addEventListener('click', () => {
-    if(gifThirteen.style.display === 'none'){
-        gifThirteen.style.display = 'block'
+    if(gifTer13.style.display === 'none'){
+        gifTer13.style.display = 'block'
     }else{
-        gifThirteen.style.display = 'none'
+        gifTer13.style.display = 'none'
     }
 })
 
 btnEx14.addEventListener('click', () => {
-    if(gifFourteen.style.display === 'none'){
-        gifFourteen.style.display = 'block'
+    if(gifTer14.style.display === 'none'){
+        gifTer14.style.display = 'block'
     }else{
-        gifFourteen.style.display = 'none'
+        gifTer14.style.display = 'none'
     }
 })
 
-
 //Quarta-Feira
 btnEx15.addEventListener('click', () => {
-    if(gifFifteen.style.display === 'none'){
-        gifFifteen.style.display = 'block'
+    if(gifQua15.style.display === 'none'){
+        gifQua15.style.display = 'block'
     }else{
-        gifFifteen.style.display = 'none'
+        gifQua15.style.display = 'none'
     }
 })
 
 btnEx16.addEventListener('click', () => {
-    if(gifSixteen.style.display === 'none'){
-        gifSixteen.style.display = 'block'
+    if(gifQua16.style.display === 'none'){
+        gifQua16.style.display = 'block'
     }else{
-        gifSixteen.style.display = 'none'
+        gifQua16.style.display = 'none'
     }
 })
 
 btnEx17.addEventListener('click', () => {
-    if(gifSeventeen.style.display === 'none'){
-        gifSeventeen.style.display = 'block'
+    if(gifQua17.style.display === 'none'){
+        gifQua17.style.display = 'block'
     }else{
-        gifSeventeen.style.display = 'none'
+        gifQua17.style.display = 'none'
     }
 })
 
 btnEx18.addEventListener('click', () => {
-    if(gifEighteen.style.display === 'none'){
-        gifEighteen.style.display = 'block'
+    if(gifQua18.style.display === 'none'){
+        gifQua18.style.display = 'block'
     }else{
-        gifEighteen.style.display = 'none'
+        gifQua18.style.display = 'none'
     }
 })
 
 btnEx19.addEventListener('click', () => {
-    if(gifNineteen.style.display === 'none'){
-        gifNineteen.style.display = 'block'
+    if(gifQua19.style.display === 'none'){
+        gifQua19.style.display = 'block'
     }else{
-        gifNineteen.style.display = 'none'
+        gifQua19.style.display = 'none'
     }
 })
 
 btnEx20.addEventListener('click', () => {
-    if(gifTwenty.style.display === 'none'){
-        gifTwenty.style.display = 'block'
+    if(gifQua20.style.display === 'none'){
+        gifQua20.style.display = 'block'
     }else{
-        gifTwenty.style.display = 'none'
+        gifQua20.style.display = 'none'
     }
 })
 
 btnEx21.addEventListener('click', () => {
-    if(gifTwentyOne.style.display === 'none'){
-        gifTwentyOne.style.display = 'block'
+    if(gifQua21.style.display === 'none'){
+        gifQua21.style.display = 'block'
     }else{
-        gifTwentyOne.style.display = 'none'
+        gifQua21.style.display = 'none'
     }
 })
 
 btnEx22.addEventListener('click', () => {
-    if(gifTwentyTwo.style.display === 'none'){
-        gifTwentyTwo.style.display = 'block'
+    if(gifQua22.style.display === 'none'){
+        gifQua22.style.display = 'block'
     }else{
-        gifTwentyTwo.style.display = 'none'
+        gifQua22.style.display = 'none'
+    }
+})
+
+//Quinta-Feira
+btnQ1.addEventListener('click', () => {
+    if(gifQui22.style.display === 'none'){
+        gifQui22.style.display = 'block'
+    }else{
+        gifQui22.style.display = 'none'
+    }
+})
+
+btnQ2.addEventListener('click', () => {
+    if(gifQui23.style.display === 'none'){
+        gifQui23.style.display = 'block'
+    }else{
+        gifQui23.style.display = 'none'
+    }
+})
+
+btnQ3.addEventListener('click', () => {
+    if(gifQui24.style.display === 'none'){
+        gifQui24.style.display = 'block'
+    }else{
+        gifQui24.style.display = 'none'
+    }
+})
+
+btnQ4.addEventListener('click', () => {
+    if(gifQui25.style.display === 'none'){
+        gifQui25.style.display = 'block'
+    }else{
+        gifQui25.style.display = 'none'
+    }
+})
+
+btnQ5.addEventListener('click', () => {
+    if(gifQui26.style.display === 'none'){
+        gifQui26.style.display = 'block'
+    }else{
+        gifQui26.style.display = 'none'
+    }
+})
+
+btnQ6.addEventListener('click', () => {
+    if(gifQui27.style.display === 'none'){
+        gifQui27.style.display = 'block'
+    }else{
+        gifQui27.style.display = 'none'
+    }
+})
+
+btnQ7.addEventListener('click', () => {
+    if(gifQui28.style.display === 'none'){
+        gifQui28.style.display = 'block'
+    }else{
+        gifQui28.style.display = 'none'
+    }
+})
+
+btnQ8.addEventListener('click', () => {
+    if(gifQui29.style.display === 'none'){
+        gifQui29.style.display = 'block'
+    }else{
+        gifQui29.style.display = 'none'
     }
 })
 
@@ -365,30 +408,30 @@ const closedTwentyThree = document.querySelector('.C-twenty-three')
 
 //Segunda-Feira
 closedOne.addEventListener('click', () => {
-    gifOne.style.display = 'none'
+    gifSeg1.style.display = 'none'
 })
 
 closedTwo.addEventListener('click', () => {
-    gifTwo.style.display = 'none'
+    gifSeg2.style.display = 'none'
 })
 closedThree.addEventListener('click', () => {
-    gifThree.style.display = 'none'
+    gifSeg3.style.display = 'none'
 })
 
 closedFour.addEventListener('click', () => {
-    gifFour.style.display = 'none'
+    gifSeg4.style.display = 'none'
 })
 
 closedFive.addEventListener('click', () => {
-    gifFive.style.display = 'none'
+    gifSeg5.style.display = 'none'
 })
 
 closedSix.addEventListener('click', () => {
-    gifSix.style.display = 'none'
+    gifSeg6.style.display = 'none'
 })
 
 closedSeven.addEventListener('click', () => {
-    gifSeven.style.display = 'none'
+    gifSeg7.style.display = 'none'
 })
 
 
@@ -453,4 +496,3 @@ closedTwentyThree.addEventListener('click', () => {
 
 
 //Sexta-Feira
-
