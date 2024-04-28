@@ -80,6 +80,8 @@ span{
     height: 100vh;
     padding: 30px;
     background-color: #161616;
+    color: white;
+    overflow-y: scroll;
 }
 
 .profile-warraper{
@@ -101,6 +103,28 @@ span{
     height: 80px;
     border-radius: 50%;
 }
+
+/* Rotas de Treino */
+li{
+    margin-left: 20px;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+/* Sobre Você */
+.buttonCalcIMC{
+    padding: 5px;
+    width: 150px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#ipeso, #ialtura{
+    width: 87px;
+}
+
 
 
 /*Pages. Sub-Paginas */

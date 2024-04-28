@@ -118,7 +118,7 @@ const [btnQ1,btnQ2,btnQ3,btnQ4,btnQ5,btnQ6,btnQ7,btnQ8] = butonsExerQuinta
 
 //Sexta-Feira
 const butonsExerSexta = [...document.querySelectorAll('.Sexta')]
-const [btnSex1,btnSex2,btnSex3,btnSex4,btnSex5,btnSex6,btnSex7,btnSex8] = butonsExerSexta
+const [btnSex1,btnSex2,btnSex3,btnSex4,btnSex5,btnSex6,btnSex7] = butonsExerSexta
 
 //Segunda-Feira
 btnS1.addEventListener('click', () => {
@@ -365,6 +365,61 @@ btnQ8.addEventListener('click', () => {
 })
 
 //Sexta-Feira
+btnSex1.addEventListener('click', () => {
+    if(gifSex30.style.display === 'none'){
+        gifSex30.style.display = 'block'
+    }else{
+        gifSex30.style.display = 'none'
+    }
+})
+
+btnSex2.addEventListener('click', () => {
+    if(gifSex31.style.display === 'none'){
+        gifSex31.style.display = 'block'
+    }else{
+        gifSex31.style.display = 'none'
+    }
+})
+
+btnSex3.addEventListener('click', () => {
+    if(gifSex33.style.display === 'none'){
+        gifSex33.style.display = 'block'
+    }else{
+        gifSex33.style.display = 'none'
+    }
+})
+
+btnSex4.addEventListener('click', () => {
+    if(gifSex34.style.display === 'none'){
+        gifSex34.style.display = 'block'
+    }else{
+        gifSex34.style.display = 'none'
+    }
+})
+
+btnSex5.addEventListener('click', () => {
+    if(gifSex35.style.display === 'none'){
+        gifSex35.style.display = 'block'
+    }else{
+        gifSex35.style.display = 'none'
+    }
+})
+
+btnSex6.addEventListener('click', () => {
+    if(gifSex36.style.display === 'none'){
+        gifSex36.style.display = 'block'
+    }else{
+        gifSex36.style.display = 'none'
+    }
+})
+
+btnSex7.addEventListener('click', () => {
+    if(gifSex37.style.display === 'none'){
+        gifSex37.style.display = 'block'
+    }else{
+        gifSex37.style.display = 'none'
+    }
+})
 
 const closedGifs = [...document.querySelectorAll('.closedGif')]
 const [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,

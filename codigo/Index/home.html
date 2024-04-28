@@ -38,14 +38,43 @@
     <main>
         <section class="container">
             <div class="profile-warraper">
-                <h1 class="saud">Olá {Name}, vamos treinar?</h1>
+                <h1 style="text-align: center;" class="saud">Olá {Name}, vamos treinar?</h1>
                 <div class="profile">
                     <img class="img-profile" src="../midia/img-profile/Laecio.jpg" alt="">
                 </div>
             </div>
             <div>
                 <h2>Rotas de Treinos</h2>
+                <ul>
+                    <li>Esteira e Bike Ergométrica</li>
+                    <li>Treino de Pernas e Glúteos</li>
+                    <li>Treino Abdominal</li>
+                    <li>Treino de Peito e Tríceps</li>
+                    <li>Treino de Costas e Bíceps</li>
+                    <li>Treino de Ombros e Trapézio</li>
+                    <li>Treino de Pernas e Glúteos (Em fase diferente)</li>
+                </ul>
                 <h2>Quanto voce está focado</h2>
+                <h4>Cardio</h4>
+                <input type="range" name="Foco" id="ifoco"> <label for="ifoco">50%</label>
+                <h4>Massa Corporal</h4>
+                <input type="range" name="Foco" id="ifoco"> <label for="ifoco">50%</label>
+            </div>
+            <div>
+                <h2>Sebre Você</h2>
+                <p>23 anos</p>
+                <p>75 kg</p>
+                <p>1,75m Altura</p>
+                <p>xx Indice Corporal</p>
+            </div>
+            <div>
+                <h2>Calcular IMC</h2>
+                <label for="ipeso">Peso kg:</label>
+                <input type="number" name="peso" id="ipeso"><br>
+                <label for="ipeso">Altura:</label>
+                <input style="margin-left: 11px;" type="number" name="altura" id="ialtura"><br>
+                <button class="buttonCalcIMC">Calcular</button>
+                <h3>O seu IMC: <span>xx</span></h3>
             </div>
         </section>
         <section class="pages">
