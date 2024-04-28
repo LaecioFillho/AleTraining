@@ -14,6 +14,8 @@ forms.addEventListener('submit', (event) => {
 
     if(user === "laeciofillho@gmail.com" && password === "1234567"){
         const data = new dados()
+    }else if(user === "realmadrid201589@gmail.com" && password ==="Qwertyui89" ){
+        const data = new dados()
     }else{
         event.preventDefault()
         alert("Dados incorretos! Ou dados não autorizados!")
