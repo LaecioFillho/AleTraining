@@ -91,54 +91,37 @@ closed5.addEventListener('click', () => {
     page5.style.display = 'none'
 })
 
-//Visibilidade dos Gifs
-
-//Segunda-Feira
-
-//Terça-Feira
-
-//Quarta-Feira
+//Visibilidade dos Gifs 'Geral'
 
 const gifs = [...document.querySelectorAll('.gifs-warraper')]
-const [gifSeg1,gifSeg2,gifSeg3,gifSeg4,gifSeg5,gifSeg6,gifSeg7,gifTer8,
+const [
+    gifSeg1,gifSeg2,gifSeg3,gifSeg4,gifSeg5,gifSeg6,gifSeg7,gifTer8,
     gifTer9,gifTer10,gifTer11,gifTer12,gifTer13,gifTer14,gifQua15,gifQua16,
-    gifQua17,gifQua18,gifQua19,gifQua20,gifQua21,gifQui22,gifQui23,gifQui24,gifQui25,gifQui26,gifQui27,gifQui28,gifQui29] = gifs
+    gifQua17,gifQua18,gifQua19,gifQua20,gifQua21,gifQui22,gifQui23,gifQui24,
+    gifQui25,gifQui26,gifQui27,gifQui28,gifQui29,gifSex30,gifSex31,gifSex32,gifSex33,gifSex34,gifSex35,gifSex36,gifSex37] = gifs
 
 //Segunda-Feira
-const btnEx1 = document.querySelector('.exSegunda1')
-const btnEx2 = document.querySelector('.exSegunda2')
-const btnEx3 = document.querySelector('.exSegunda3')
-const btnEx4 = document.querySelector('.exSegunda4')
-const btnEx5 = document.querySelector('.exSegunda5')
-const btnEx6 = document.querySelector('.exSegunda6')
-const btnEx7 = document.querySelector('.exSegunda7')
+const butonsExerSegunda = [...document.querySelectorAll('.Segunda')]
+const [btnS1,btnS2,btnS3,btnS4,btnS5,btnS6,btnS7] = butonsExerSegunda
 
 //Terça-Feira
-const btnEx8 = document.querySelector('.exTerca1')
-const btnEx9 = document.querySelector('.exTerca2')
-const btnEx10 = document.querySelector('.exTerca3')
-const btnEx11 = document.querySelector('.exTerca4')
-const btnEx12 = document.querySelector('.exTerca5')
-const btnEx13 = document.querySelector('.exTerca6')
-const btnEx14 = document.querySelector('.exTerca7')
+const butonsExerTerca = [...document.querySelectorAll('.Terca')]
+const [btnT1,btnT2,btnT3,btnT4,btnT5,btnT6,btnT7] = butonsExerTerca
 
 //Quarta-Feira
-const btnEx15 = document.querySelector('.exQuarta1')
-const btnEx16 = document.querySelector('.exQuarta2')
-const btnEx17 = document.querySelector('.exQuarta3')
-const btnEx18 = document.querySelector('.exQuarta4')
-const btnEx19 = document.querySelector('.exQuarta5')
-const btnEx20 = document.querySelector('.exQuarta6')
-const btnEx21 = document.querySelector('.exQuarta7')
-const btnEx22 = document.querySelector('.exQuarta8')
-
+const butonsExerQuarta = [...document.querySelectorAll('.Quarta')]
+const [btnQua1,btnQua2,btnQua3,btnQua4,btnQua5,btnQua6,btnQua7,btnQua8] = butonsExerQuarta
 
 //Quinta-Feira
 const butonsExerQuinta = [...document.querySelectorAll('.Quinta')]
 const [btnQ1,btnQ2,btnQ3,btnQ4,btnQ5,btnQ6,btnQ7,btnQ8] = butonsExerQuinta
 
+//Sexta-Feira
+const butonsExerSexta = [...document.querySelectorAll('.Sexta')]
+const [btnSex1,btnSex2,btnSex3,btnSex4,btnSex5,btnSex6,btnSex7,btnSex8] = butonsExerSexta
+
 //Segunda-Feira
-btnEx1.addEventListener('click', () => {
+btnS1.addEventListener('click', () => {
     if(gifSeg1.style.display === 'none'){
         gifSeg1.style.display = 'block'
     }else{
@@ -146,7 +129,7 @@ btnEx1.addEventListener('click', () => {
     }
 })
 
-btnEx2.addEventListener('click', () => {
+btnS2.addEventListener('click', () => {
     if(gifSeg2.style.display === 'none'){
         gifSeg2.style.display = 'block'
     }else{
@@ -154,7 +137,7 @@ btnEx2.addEventListener('click', () => {
     }
 })
 
-btnEx3.addEventListener('click', () => {
+btnS3.addEventListener('click', () => {
     if(gifSeg3.style.display === 'none'){
         gifSeg3.style.display = 'block'
     }else{
@@ -162,7 +145,7 @@ btnEx3.addEventListener('click', () => {
     }
 })
 
-btnEx4.addEventListener('click', () => {
+btnS4.addEventListener('click', () => {
     if(gifSeg4.style.display === 'none'){
         gifSeg4.style.display = 'block'
     }else{
@@ -170,7 +153,7 @@ btnEx4.addEventListener('click', () => {
     }
 })
 
-btnEx5.addEventListener('click', () => {
+btnS5.addEventListener('click', () => {
     if(gifSeg5.style.display === 'none'){
         gifSeg5.style.display = 'block'
     }else{
@@ -178,7 +161,7 @@ btnEx5.addEventListener('click', () => {
     }
 })
 
-btnEx6.addEventListener('click', () => {
+btnS6.addEventListener('click', () => {
     if(gifSeg6.style.display === 'none'){
         gifSeg6.style.display = 'block'
     }else{
@@ -186,7 +169,7 @@ btnEx6.addEventListener('click', () => {
     }
 })
 
-btnEx7.addEventListener('click', () => {
+btnS7.addEventListener('click', () => {
     if(gifSeg7.style.display === 'none'){
         gifSeg7.style.display = 'block'
     }else{
@@ -195,7 +178,7 @@ btnEx7.addEventListener('click', () => {
 })
 
 //Terça-Feira
-btnEx8.addEventListener('click', () => {
+btnT1.addEventListener('click', () => {
     if(gifTer8.style.display === 'none'){
         gifTer8.style.display = 'block'
     }else{
@@ -203,7 +186,7 @@ btnEx8.addEventListener('click', () => {
     }
 })
 
-btnEx9.addEventListener('click', () => {
+btnT2.addEventListener('click', () => {
     if(gifTer9.style.display === 'none'){
         gifTer9.style.display = 'block'
     }else{
@@ -211,7 +194,7 @@ btnEx9.addEventListener('click', () => {
     }
 })
 
-btnEx10.addEventListener('click', () => {
+btnT3.addEventListener('click', () => {
     if(gifTer10.style.display === 'none'){
         gifTer10.style.display = 'block'
     }else{
@@ -219,7 +202,7 @@ btnEx10.addEventListener('click', () => {
     }
 })
 
-btnEx11.addEventListener('click', () => {
+btnT4.addEventListener('click', () => {
     if(gifTer11.style.display === 'none'){
         gifTer11.style.display = 'block'
     }else{
@@ -227,7 +210,7 @@ btnEx11.addEventListener('click', () => {
     }
 })
 
-btnEx12.addEventListener('click', () => {
+btnT5.addEventListener('click', () => {
     if(gifTer12.style.display === 'none'){
         gifTer12.style.display = 'block'
     }else{
@@ -235,7 +218,7 @@ btnEx12.addEventListener('click', () => {
     }
 })
 
-btnEx13.addEventListener('click', () => {
+btnT6.addEventListener('click', () => {
     if(gifTer13.style.display === 'none'){
         gifTer13.style.display = 'block'
     }else{
@@ -243,7 +226,7 @@ btnEx13.addEventListener('click', () => {
     }
 })
 
-btnEx14.addEventListener('click', () => {
+btnT7.addEventListener('click', () => {
     if(gifTer14.style.display === 'none'){
         gifTer14.style.display = 'block'
     }else{
@@ -252,7 +235,7 @@ btnEx14.addEventListener('click', () => {
 })
 
 //Quarta-Feira
-btnEx15.addEventListener('click', () => {
+btnQua1.addEventListener('click', () => {
     if(gifQua15.style.display === 'none'){
         gifQua15.style.display = 'block'
     }else{
@@ -260,7 +243,7 @@ btnEx15.addEventListener('click', () => {
     }
 })
 
-btnEx16.addEventListener('click', () => {
+btnQua2.addEventListener('click', () => {
     if(gifQua16.style.display === 'none'){
         gifQua16.style.display = 'block'
     }else{
@@ -268,7 +251,7 @@ btnEx16.addEventListener('click', () => {
     }
 })
 
-btnEx17.addEventListener('click', () => {
+btnQua3.addEventListener('click', () => {
     if(gifQua17.style.display === 'none'){
         gifQua17.style.display = 'block'
     }else{
@@ -276,7 +259,7 @@ btnEx17.addEventListener('click', () => {
     }
 })
 
-btnEx18.addEventListener('click', () => {
+btnQua4.addEventListener('click', () => {
     if(gifQua18.style.display === 'none'){
         gifQua18.style.display = 'block'
     }else{
@@ -284,7 +267,7 @@ btnEx18.addEventListener('click', () => {
     }
 })
 
-btnEx19.addEventListener('click', () => {
+btnQua5.addEventListener('click', () => {
     if(gifQua19.style.display === 'none'){
         gifQua19.style.display = 'block'
     }else{
@@ -292,7 +275,7 @@ btnEx19.addEventListener('click', () => {
     }
 })
 
-btnEx20.addEventListener('click', () => {
+btnQua6.addEventListener('click', () => {
     if(gifQua20.style.display === 'none'){
         gifQua20.style.display = 'block'
     }else{
@@ -300,7 +283,7 @@ btnEx20.addEventListener('click', () => {
     }
 })
 
-btnEx21.addEventListener('click', () => {
+btnQua7.addEventListener('click', () => {
     if(gifQua21.style.display === 'none'){
         gifQua21.style.display = 'block'
     }else{
@@ -308,7 +291,7 @@ btnEx21.addEventListener('click', () => {
     }
 })
 
-btnEx22.addEventListener('click', () => {
+btnQua8.addEventListener('click', () => {
     if(gifQua22.style.display === 'none'){
         gifQua22.style.display = 'block'
     }else{
@@ -381,118 +364,134 @@ btnQ8.addEventListener('click', () => {
     }
 })
 
-const closedOne = document.querySelector('.C-one')
-const closedTwo = document.querySelector('.C-two')
-const closedThree = document.querySelector('.C-three')
-const closedFour = document.querySelector('.C-four')
-const closedFive = document.querySelector('.C-five')
-const closedSix = document.querySelector('.C-six')
-const closedSeven = document.querySelector('.C-seven')
-const closedEigth = document.querySelector('.C-eigth')
-const closedNine = document.querySelector('.C-nine')
-const closedTen = document.querySelector('.C-ten')
-const closedEleven = document.querySelector('.C-eleven')
-const closedTwelve = document.querySelector('.C-twelve')
-const closedThirteen = document.querySelector('.C-thirteen')
-const closedFourteen = document.querySelector('.C-fourteen')
-const closedFifteen = document.querySelector('.C-fifteen')
-const closedSixteen = document.querySelector('.C-sixteen')
-const closedSeventeen = document.querySelector('.C-seventeen')
-const closedEighteen = document.querySelector('.C-eighteen')
-const closedNineteen = document.querySelector('.C-nineteen')
-const closedTwenty = document.querySelector('.C-twenty')
-const closedTwentyOne = document.querySelector('.C-twenty-one')
-const closedTwentyTwo = document.querySelector('.C-twenty-two')
-const closedTwentyThree = document.querySelector('.C-twenty-three')
+//Sexta-Feira
 
+const closedGifs = [...document.querySelectorAll('.closedGif')]
+const [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,
+    c19,c20,c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,c31,c32,c33,c34,c35,
+    c36,c37] = closedGifs
 
 //Segunda-Feira
-closedOne.addEventListener('click', () => {
+c1.addEventListener('click', () => {
     gifSeg1.style.display = 'none'
 })
-
-closedTwo.addEventListener('click', () => {
+c2.addEventListener('click', () => {
     gifSeg2.style.display = 'none'
 })
-closedThree.addEventListener('click', () => {
+c3.addEventListener('click', () => {
     gifSeg3.style.display = 'none'
 })
-
-closedFour.addEventListener('click', () => {
+c4.addEventListener('click', () => {
     gifSeg4.style.display = 'none'
 })
-
-closedFive.addEventListener('click', () => {
+c5.addEventListener('click', () => {
     gifSeg5.style.display = 'none'
 })
-
-closedSix.addEventListener('click', () => {
+c6.addEventListener('click', () => {
     gifSeg6.style.display = 'none'
 })
-
-closedSeven.addEventListener('click', () => {
+c7.addEventListener('click', () => {
     gifSeg7.style.display = 'none'
 })
 
 
 //Terça-Feira
-closedEigth.addEventListener('click', () => {
-    gifEigth.style.display = 'none'
+c8.addEventListener('click', () => {
+    gifTer8.style.display = 'none'
 })
-
-closedNine.addEventListener('click', () => {
-    gifNine.style.display = 'none'
+c9.addEventListener('click', () => {
+    gifTer9.style.display = 'none'
 })
-
-closedTen.addEventListener('click', () => {
-    gifTen.style.display = 'none'
+c10.addEventListener('click', () => {
+    gifTer10.style.display = 'none'
 })
-
-closedEleven.addEventListener('click', () => {
-    gifEleven.style.display = 'none'
+c11.addEventListener('click', () => {
+    gifTer11.style.display = 'none'
 })
-
-closedThirteen.addEventListener('click', () => {
-    gifThirteen.style.display = 'none'
+c12.addEventListener('click', () => {
+    gifTer12.style.display = 'none'
 })
-
-closedFourteen.addEventListener('click', () => {
-    gifFourteen.style.display = 'none'
+c13.addEventListener('click', () => {
+    gifTer13.style.display = 'none'
 })
-
-closedFifteen.addEventListener('click', () => {
-    gifFifteen.style.display = 'none'
+c14.addEventListener('click', () => {
+    gifTer14.style.display = 'none'
 })
 
 
 //Quarta-Feira
-closedSixteen.addEventListener('click', () => {
-    gifSixteen.style.display = 'none'
+c15.addEventListener('click', () => {
+    gifQua15.style.display = 'none'
 })
-closedSeventeen.addEventListener('click', () => {
-    gifSeventeen.style.display = 'none'
+c16.addEventListener('click', () => {
+    gifQua16.style.display = 'none'
 })
-closedEighteen.addEventListener('click', () => {
-    gifEighteen.style.display = 'none'
+c17.addEventListener('click', () => {
+    gifQua17.style.display = 'none'
 })
-closedNineteen.addEventListener('click', () => {
-    gifNineteen.style.display = 'none'
+c18.addEventListener('click', () => {
+    gifQua18.style.display = 'none'
 })
-closedTwenty.addEventListener('click', () => {
-    gifTwenty.style.display = 'none'
+c19.addEventListener('click', () => {
+    gifQua19.style.display = 'none'
 })
-closedTwentyOne.addEventListener('click', () => {
-    gifTwentyOne.style.display = 'none'
+c20.addEventListener('click', () => {
+    gifQua20.style.display = 'none'
 })
-closedTwentyTwo.addEventListener('click', () => {
-    gifTwentyTwo.style.display = 'none'
-})
-closedTwentyThree.addEventListener('click', () => {
-    gifTwentyThree.style.display = 'none'
+c21.addEventListener('click', () => {
+    gifQua21.style.display = 'none'
 })
 
 
 //Quinta-Feira
+c22.addEventListener('click', () => {
+    gifQui22.style.display = 'none'
+})
+c23.addEventListener('click', () => {
+    gifQui23.style.display = 'none'
+})
+c24.addEventListener('click', () => {
+    gifQui24.style.display = 'none'
+})
+c25.addEventListener('click', () => {
+    gifQui25.style.display = 'none'
+})
+c26.addEventListener('click', () => {
+    gifQui26.style.display = 'none'
+})
+c27.addEventListener('click', () => {
+    gifQui27.style.display = 'none'
+})
+c28.addEventListener('click', () => {
+    gifQui28.style.display = 'none'
+})
+c29.addEventListener('click', () => {
+    gifQui29.style.display = 'none'
+})
 
 
 //Sexta-Feira
+c30.addEventListener('click', () => {
+    gifSex30.style.display = 'none'
+})
+c31.addEventListener('click', () => {
+    gifSex31.style.display = 'none'
+})
+c32.addEventListener('click', () => {
+    gifSex32.style.display = 'none'
+})
+c33.addEventListener('click', () => {
+    gifSex33.style.display = 'none'
+})
+c34.addEventListener('click', () => {
+    gifSex34.style.display = 'none'
+})
+c35.addEventListener('click', () => {
+    gifSex35.style.display = 'none'
+})
+c36.addEventListener('click', () => {
+    gifSex36.style.display = 'none'
+})
+c37.addEventListener('click', () => {
+    gifSex37.style.display = 'none'
+})
