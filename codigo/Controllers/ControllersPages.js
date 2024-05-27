@@ -118,7 +118,7 @@ const [btnQ1,btnQ2,btnQ3,btnQ4,btnQ5,btnQ6,btnQ7,btnQ8] = butonsExerQuinta
 
 //Sexta-Feira
 const butonsExerSexta = [...document.querySelectorAll('.Sexta')]
-const [btnSex1,btnSex2,btnSex3,btnSex4,btnSex5,btnSex6,btnSex7] = butonsExerSexta
+const [btnSex1,btnSex2,btnSex3,btnSex4,btnSex5,btnSex6,btnSex7, btnSex8] = butonsExerSexta
 
 //Segunda-Feira
 btnS1.addEventListener('click', () => {
@@ -382,6 +382,14 @@ btnSex2.addEventListener('click', () => {
 })
 
 btnSex3.addEventListener('click', () => {
+    if(gifSex32.style.display === 'none'){
+        gifSex32.style.display = 'block'
+    }else{
+        gifSex32.style.display = 'none'
+    }
+})
+
+btnSex4.addEventListener('click', () => {
     if(gifSex33.style.display === 'none'){
         gifSex33.style.display = 'block'
     }else{
@@ -389,7 +397,7 @@ btnSex3.addEventListener('click', () => {
     }
 })
 
-btnSex4.addEventListener('click', () => {
+btnSex5.addEventListener('click', () => {
     if(gifSex34.style.display === 'none'){
         gifSex34.style.display = 'block'
     }else{
@@ -397,7 +405,7 @@ btnSex4.addEventListener('click', () => {
     }
 })
 
-btnSex5.addEventListener('click', () => {
+btnSex6.addEventListener('click', () => {
     if(gifSex35.style.display === 'none'){
         gifSex35.style.display = 'block'
     }else{
@@ -405,7 +413,7 @@ btnSex5.addEventListener('click', () => {
     }
 })
 
-btnSex6.addEventListener('click', () => {
+btnSex7.addEventListener('click', () => {
     if(gifSex36.style.display === 'none'){
         gifSex36.style.display = 'block'
     }else{
@@ -413,13 +421,14 @@ btnSex6.addEventListener('click', () => {
     }
 })
 
-btnSex7.addEventListener('click', () => {
+btnSex8.addEventListener('click', () => {
     if(gifSex37.style.display === 'none'){
         gifSex37.style.display = 'block'
     }else{
         gifSex37.style.display = 'none'
     }
 })
+
 
 const closedGifs = [...document.querySelectorAll('.closedGif')]
 const [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,

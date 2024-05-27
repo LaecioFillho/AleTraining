@@ -74,11 +74,26 @@ span{
     margin: -12px;
 }
 
+/* Rotas de Trinos alternativos*/
+
+.h2-routs{
+    max-width: 200px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.routs-academy{
+    max-width: 300px;
+    padding: 5px;
+    border: 1px dashed white;
+    border-radius: 10px;
+}
+
 /*Conteiner. Corpo principal*/
 
 .container{
     height: 100vh;
-    padding: 30px;
+    padding: 20px;
     background-color: #161616;
     color: white;
     overflow-y: scroll;
@@ -131,7 +146,7 @@ h2{
 
 .sub-pages{
     display: none;
-    background-color: #ffffffbe;
+    background-color: #ffffffe5;
     width: 300px;
     height: auto;
     padding: 20px;
@@ -177,10 +192,10 @@ h2{
     top: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: #ffffffea;
+    background-color: #ffffffe5;
     padding-top: 10px;
     width: 350px;
-    height: 350px;
+    height: auto;
     padding: 5px;
 }
 

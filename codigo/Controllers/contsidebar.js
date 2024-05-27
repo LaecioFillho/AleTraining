@@ -42,13 +42,6 @@ onSidebar.addEventListener('click', () => {
     }
 })
 
-
-const nameUser = document.querySelector('.saud')
-
-module.export = function dados(){
-  nameUser.innerHTML = "Olá Junior, Vamos treinar?"
-}
-
 /* const selected = document.querySelectorAll('.icons-warraper')
 
 selected.addEventListener('click', function() {
@@ -58,3 +51,20 @@ selected.addEventListener('click', function() {
         Selected.setAttribute('class', 'selected')
     }
 })*/
+
+
+
+//Calcular o IMC 
+
+//const peso = document.getElementById('ipeso')
+const peso = document.getElementById('ipeso').value
+const altura = document.getElementById('ialtura').value
+const btnCal = document.getElementById('buttonCalcIMC')
+
+const printResult = document.getElementById('result')
+let res = 0
+
+function calcular() {
+    res = peso + (altura * altura)
+    printResult.innerHTML = "O seu IMC: " + res
+}

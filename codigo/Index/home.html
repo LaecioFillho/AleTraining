@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <title>Treinos</title>
+    <title>DevAcadmy</title>
 </head>
 <body>
     <header>
@@ -38,14 +38,14 @@
     <main>
         <section class="container">
             <div class="profile-warraper">
-                <h1 style="text-align: center;" class="saud">Olá {Name}, vamos treinar?</h1>
+                <h1 style="text-align: center;" class="saud">Olá, vamos treinar?</h1>
                 <div class="profile">
-                    <img class="img-profile" src="../midia/img-profile/Laecio.jpg" alt="">
+                    <img class="img-profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvvUX0SvAKTX-PiLChztoUflbv3yP5h66meP1-F2uhQ&s" alt="">
                 </div>
             </div>
-            <div>
-                <h2>Rotas de Treinos</h2>
-                <ul>
+            <div >
+                <h2 class="h2-routs">Rotas de Treinos</h2>
+                <ul class="routs-academy">
                     <li>Esteira e Bike Ergométrica</li>
                     <li>Treino de Pernas e Glúteos</li>
                     <li>Treino Abdominal</li>
@@ -54,27 +54,37 @@
                     <li>Treino de Ombros e Trapézio</li>
                     <li>Treino de Pernas e Glúteos (Em fase diferente)</li>
                 </ul>
-                <h2>Quanto voce está focado</h2>
-                <h4>Cardio</h4>
-                <input type="range" name="Foco" id="ifoco"> <label for="ifoco">50%</label>
-                <h4>Massa Corporal</h4>
-                <input type="range" name="Foco" id="ifoco"> <label for="ifoco">50%</label>
+                
+                <h2 class="h2-routs" style="max-width: 280px;">Quanto voce está focado</h2>
+                <div class="routs-academy">
+                    <label for="ifoco">Cardio</label><br>
+                    <input 
+                        type="range" 
+                        name="foco" 
+                        id="ifoco"  min="0" max="100"
+                        value="80" 
+                        oninput="iresult.innerHTML = Number(ifoco.value)"> 
+                    <output id="iresult">80</output><span style="margin: 0; font-size: 16px;">%</span><br>
+                    <label for="ifoco">Massa Corporal</label><br>
+                    <input 
+                        type="range" 
+                        name="Foco" 
+                        id="ifoco2" 
+                        value="20"
+                        oninput="iresultMC.innerHTML = Number(ifoco2.value)">
+                    <output id="iresultMC">20</output><span style="margin: 0; font-size: 16px;">%</span>
+                </div>
             </div>
-            <div>
-                <h2>Sebre Você</h2>
-                <p>23 anos</p>
-                <p>75 kg</p>
-                <p>1,75m Altura</p>
-                <p>xx Indice Corporal</p>
-            </div>
-            <div>
-                <h2>Calcular IMC</h2>
+
+            
+            <h2 class="h2-routs" style="max-width: 150px;">Calcular IMC</h2>
+            <div class="routs-academy">
                 <label for="ipeso">Peso kg:</label>
-                <input type="number" name="peso" id="ipeso"><br>
+                <input type="number" name="peso" id="ipeso" value="70"><br>
                 <label for="ipeso">Altura:</label>
-                <input style="margin-left: 11px;" type="number" name="altura" id="ialtura"><br>
-                <button class="buttonCalcIMC">Calcular</button>
-                <h3>O seu IMC: <span>xx</span></h3>
+                <input style="margin-left: 11px;" type="number" name="altura" id="ialtura" value="170"><br>
+                <button class="buttonCalcIMC" onclick={calcular()}>Calcular</button>
+                <h3 id="result">O seu IMC: <output>XX</output></h3>
             </div>
         </section>
         <section class="pages">
